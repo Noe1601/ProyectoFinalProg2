@@ -1,0 +1,26 @@
+﻿body {
+    background: url(./imagenes/background.png);
+}
+
+#container{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    width: 65%;
+    margin-left: 230px;
+    margin-top: 30px;
+}
+
+
+.GridView1{
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+
+
+
+
+    
+
