@@ -24,6 +24,24 @@ namespace CapaPresentacion
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Control Label1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+
+        /// <summary>
+        /// Control TextBoxID.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxID;
+
+        /// <summary>
         /// Control LabelCargo.
         /// </summary>
         /// <remarks>
@@ -51,21 +69,21 @@ namespace CapaPresentacion
         protected global::System.Web.UI.WebControls.Button ButtonCargo;
 
         /// <summary>
-        /// Control BotonAtras.
+        /// Control Button1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BotonAtras;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// Control RepeaterCargo.
+        /// Control Button2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater RepeaterCargo;
+        protected global::System.Web.UI.WebControls.Button Button2;
     }
 }

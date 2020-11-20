@@ -25,10 +25,10 @@
         <a class="nav-link" href="ReporteNomina.aspx">NOMINA</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="FiltroEmpleados.aspx">EMPLEADOS ACTIVOS</a>
+        <a class="nav-link" href="FiltroEmpleados.aspx">ACTIVOS</a>
       </li>
          <li class="nav-item active">
-        <a class="nav-link" href="ReporteEmpleadosInactivos.aspx">EMPLEADOS INACTIVOS</a>
+        <a class="nav-link" href="ReporteEmpleadosInactivos.aspx">INACTIVOS</a>
       </li>
            <li class="nav-item active">
         <a class="nav-link" href="ReporteDepartamentos.aspx">DEPARTAMENTOS</a>
@@ -37,13 +37,13 @@
         <a class="nav-link" href="ReporteCargos.aspx">CARGOS</a>
       </li>
            <li class="nav-item active">
-        <a class="nav-link" href="Entradas.aspx">EMPLEADOS MENSUALES</a>
+        <a class="nav-link" href="Entradas.aspx">E.MENSUALES</a>
       </li>
            <li class="nav-item active">
-        <a class="nav-link" href="FiltroSalidas.aspx">SALIDAS MENSUALES</a>
+        <a class="nav-link" href="FiltroSalidas.aspx">S.MENSUALES</a>
       </li>
            <li class="nav-item active">
-        <a class="nav-link" href="FiltroPermiso.aspx">PERMISOS </a>
+        <a class="nav-link" href="FiltroPermiso.aspx">PERMISOS</a>
       </li>
     </ul>
 

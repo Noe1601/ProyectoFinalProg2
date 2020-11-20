@@ -17,8 +17,6 @@ namespace CapaPresentacion
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            RepeaterLic.DataSource = nego.MostrarLicencia();
-            RepeaterLic.DataBind();
         }
 
         protected void Button1_Click(object sender, EventArgs e)

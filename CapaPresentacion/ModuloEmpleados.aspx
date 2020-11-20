@@ -11,6 +11,7 @@
 </head>
 <body>
     <div id="container3">
+        <a href="Modulo1.aspx">Ir a pagina principal</a>
     <form id="form1" runat="server" class="form-horizontal">
         <h1>Seccion empleados</h1>
         <asp:Label ID="Label1" runat="server" Text="Codigo empleado"></asp:Label><br />
@@ -28,48 +29,15 @@
         <asp:Label ID="Label7" runat="server" Text="Fecha"></asp:Label><br />
         <asp:TextBox ID="TextBoxFecha" runat="server"></asp:TextBox><br />
         <asp:Label ID="Label8" runat="server" Text="Estatus"></asp:Label><br />
-        <asp:TextBox ID="TextBoxEstatus" runat="server"></asp:TextBox><br /><br />
+        <asp:TextBox ID="TextBoxEstatus" runat="server"></asp:TextBox><br />
         <asp:Label ID="Label9" runat="server" Text="Salario"></asp:Label><br />
         <asp:TextBox ID="TextBoxSalario" runat="server"></asp:TextBox><br /><br />
-        <asp:Button ID="Button1" class="btn btn-success" runat="server" Text="Registrar empleado" OnClick="Button1_Click" />
-        <asp:Button ID="Button2" class="btn btn-danger" runat="server" Text="Ir atras" OnClick="Button2_Click" />
+        <asp:Button ID="Button1" class="btn btn-success" runat="server" Text="Registrar empleado" OnClick="Button1_Click" /><br /><br />
+         <asp:Button ID="Button3" class="btn btn-warning" runat="server" Text="Actualizar empleado" OnClick="Button3_Click1"  /><br /><br />
+         <asp:Button ID="Button4" class="btn btn-primary" runat="server" Text="Eliminar empleado" OnClick="Button4_Click"  /><br /><br />
+
     </form>
         </div>
-     <div id="contenedor4">
-    <table class="table table-bordered">
-        <thead id="cabecera">
-            <tr>
-                    <th>ID</th>
-                    <th>Codigo</th>
-                    <th>Nombre </th>
-                    <th>Apellido</th>
-                    <th>Telefono</th>
-                    <th>Departamento</th>
-                    <th>Cargo</th>
-                    <th>Fecha</th>
-                    <th>Estatus</th>
-                    <th>Salario</th>
-            </tr>
-        </thead>
-        <tbody id="cuerpo">
-            <asp:Repeater ID="RepeaterEmp" runat="server">
-                <ItemTemplate>
-                    <tr>
-                        <td> <%#Eval("id") %></td>
-                        <td> <%#Eval("codigoempleado") %></td>
-                        <td> <%#Eval("nombre") %></td>
-                        <td> <%#Eval("apellido") %></td>
-                        <td> <%#Eval("telefono") %></td>
-                        <td> <%#Eval("departamento") %></td>
-                        <td> <%#Eval("cargo") %></td>
-                        <td> <%#Eval("fecha") %></td>
-                        <td> <%#Eval("Estatus") %></td>
-                        <td> <%#Eval("salario") %></td>
-                    </tr>
-                </ItemTemplate>
-            </asp:Repeater>
-        </tbody>
-    </table>
-  </div>
+    
 </body>
 </html>

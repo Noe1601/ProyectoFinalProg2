@@ -9,13 +9,14 @@
     background-color: white;
     width: 65%;
     margin-left: 230px;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
-.GridView1{
+#container .GridView1{
     margin-top: 20px;
-    margin-left: 70px;
+    margin-left: 150px;
     margin-bottom: 20px;
 }
 

@@ -34,21 +34,7 @@
 body {
 }
 
-#container {
-    margin-top: 30px;
-    border: 1px solid black;
-    margin-left: 320px;
-    width: 50%;
-    height: 600px;
-    text-align: center;
-    border-radius: 5px;
-    background-color: white;
-    color: black;
-}
-
-
-
-#container3 {
+#container{
     margin-top: 30px;
     border: 1px solid black;
     margin-left: 320px;
@@ -60,17 +46,72 @@ body {
     color: black;
 }
 
-#contenedor {
+#containerD {
     margin-top: 30px;
     border: 1px solid black;
     margin-left: 320px;
-    width:50%;
+    width: 50%;
+    height: 700px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+#container3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    margin-left: 320px;
+    width: 50%;
+    height: 850px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+#container500 {
+    margin-top: 30px;
+    border: 1px solid black;
+    margin-left: 320px;
+    width: 50%;
     height: 450px;
     text-align: center;
     border-radius: 5px;
     background-color: white;
     color: black;
 }
+
+#container600 {
+    margin-top: 30px;
+    border: 1px solid black;
+    margin-left: 320px;
+    width: 50%;
+    height: 490px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+
+
+    #contenedor {
+        margin-top: 30px;
+        border: 1px solid black;
+        margin-left: 320px;
+        width: 50%;
+        height: 450px;
+        text-align: center;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+    }
 
 
 /*table {
@@ -132,7 +173,13 @@ form input[type="text"] {
     width: 90%;
 }
 
+.btn-primary{
+    width: 90%;
+}
 
+.btn-warning{
+    width: 90%;
+}
 
 .footer {
     margin-top: 500px;

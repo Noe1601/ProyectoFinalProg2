@@ -11,35 +11,20 @@
 </head>
 <body>
     <div id="container">
+    <a href="Modulo1.aspx">Ir a pagina principal</a>
     <form id="form1" runat="server" class="form-horizontal">
         <div>
             <h1>Seccion cargos</h1>
+             <asp:Label ID="Label1" runat="server" Text="ID"></asp:Label><br />
+            <asp:TextBox ID="TextBoxID" runat="server"></asp:TextBox><br />
             <asp:Label ID="LabelCargo" runat="server" Text="Cargo"></asp:Label><br />
             <asp:TextBox ID="TextBoxCargo" runat="server"></asp:TextBox><br /><br />
-            <asp:Button ID="ButtonCargo" class="btn btn-success" runat="server" Text="Registrar cargo" OnClick="ButtonCargo_Click" />
-              <asp:Button ID="BotonAtras" class="btn btn-danger" runat="server" Text="Ir atras" OnClick="BotonAtras_Click" />
+            <asp:Button ID="ButtonCargo" class="btn btn-success" runat="server" Text="Registrar cargo" OnClick="ButtonCargo_Click" /><br /><br />
+               <asp:Button ID="Button1" class="btn btn-warning" runat="server" Text="Actualizar cargo" OnClick="Button1_Click"  /><br /><br />
+            <asp:Button ID="Button2" class="btn btn-primary" runat="server" Text="Eliminar cargo" OnClick="Button2_Click"  /><br /><br />
         </div>
     </form>
         </div>
-     <div id="contenedor2">
-    <table class="table table-bordered">
-        <thead id="cabecera">
-            <tr>
-                 <th>ID</th>
-                 <th>Cargo</th>
-            </tr>
-        </thead>
-        <tbody id="cuerpo">
-            <asp:Repeater ID="RepeaterCargo" runat="server">
-                <ItemTemplate>
-                    <tr>
-                        <td> <%#Eval("id") %></td>
-                        <td> <%#Eval("cargo") %></td>
-                    </tr>
-                </ItemTemplate>
-            </asp:Repeater>
-        </tbody>
-    </table>
-  </div>
+    
 </body>
 </html>

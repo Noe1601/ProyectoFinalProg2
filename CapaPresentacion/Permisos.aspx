@@ -10,7 +10,7 @@
     <title></title>
 </head>
 <body>
-    <div id="container3">
+    <div id="container500">
     <form id="form1" runat="server">
         <div>
             
@@ -29,31 +29,6 @@
     </form>
         </div>
        <br />
-          <div id="container2">
-        <table class="table table-bordered">
-        <thead id="cabecera">
-            <tr>
-                    <th>ID</th>
-                    <th>No. Empleado</th>
-                    <th>Fecha de inicio </th>
-                    <th>Fecha de fin</th>
-                    <th>Comentarios</th>
-            </tr>
-        </thead>
-        <tbody id="cuerpo">
-            <asp:Repeater ID="RepeaterPer" runat="server">
-                <ItemTemplate>
-                    <tr>
-                        <td> <%#Eval("id") %></td>
-                        <td> <%#Eval("empleado") %></td>
-                        <td> <%#Eval("desde") %></td>
-                        <td> <%#Eval("hasta") %></td>
-                        <td> <%#Eval("comentarios") %></td>
-                    </tr>
-                </ItemTemplate>
-            </asp:Repeater>
-        </tbody>
-    </table>
-    </div>
+      
 </body>
 </html>

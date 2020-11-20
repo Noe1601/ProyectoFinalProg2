@@ -11,9 +11,9 @@
     <title></title>
 </head>
 <body>
-    <div id="container3">
+    <div id="container500">
     <form id="form1" runat="server">
-         <h1>Seccion departamentos</h1>
+         <h1>Registro de nomina</h1>
             <asp:Label ID="LabelCodigo" runat="server" Text="Ingrese el año correspondiente"></asp:Label><br />
             <asp:TextBox ID="textboxYear" runat="server"></asp:TextBox><br />
             <asp:Label ID="LabelNombre" runat="server" Text="Ingrese el mes correspondiente"></asp:Label><br />
@@ -23,29 +23,6 @@
     </form>
         </div>
     <br />
-     <div id="contenedor2">
-    <table class="table table-bordered">
-        <thead id="cabecera">
-            <tr>
-                 <th>ID</th>
-                 <th>Año</th>
-                 <th>Mes</th>
-                 <th>Monto</th>
-            </tr>
-        </thead>
-        <tbody id="cuerpo">
-            <asp:Repeater ID="RepeaterNom" runat="server">
-                <ItemTemplate>
-                    <tr>
-                        <td> <%#Eval("id") %></td>
-                        <td> <%#Eval("yearr") %></td>
-                        <td> <%#Eval("mes") %></td>
-                        <td> <%#Eval("montototal") %></td>
-                    </tr>
-                </ItemTemplate>
-            </asp:Repeater>
-        </tbody>
-    </table>
-  </div>
+  
 </body>
 </html>

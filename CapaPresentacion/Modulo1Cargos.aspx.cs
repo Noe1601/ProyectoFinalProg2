@@ -15,8 +15,7 @@ namespace CapaPresentacion
         datosnegocio nego = new datosnegocio();
         protected void Page_Load(object sender, EventArgs e)
         {
-            RepeaterCargo.DataSource = nego.MostrarCargo();
-            RepeaterCargo.DataBind();
+            
         }
 
         protected void ButtonCargo_Click(object sender, EventArgs e)
@@ -29,6 +28,19 @@ namespace CapaPresentacion
         protected void BotonAtras_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Modulo1.aspx");
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            cargos.id = int.Parse(TextBoxID.Text);
+            cargos.cargo = TextBoxCargo.Text;
+            nego.EditarCargo(cargos);
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            cargos.id = int.Parse(TextBoxID.Text);
+            nego.EliminarCargo(cargos);
         }
     }
 }

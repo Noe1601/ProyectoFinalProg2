@@ -10,10 +10,10 @@
     <title></title>
 </head>
 <body>
-    <div id="container3">
+    <div id="container500">
     <form id="form1" runat="server">
         <div>
-               <h1>Registro de licencias</h1>
+               <h1>Salida de empleados</h1>
             <asp:Label ID="Label1" runat="server" Text="Empleado"></asp:Label><br />
             <asp:TextBox ID="TextBoxEmpleado" runat="server"></asp:TextBox><br />
              <asp:Label ID="Label2" runat="server" Text="Tipo de salida"></asp:Label><br />
@@ -28,31 +28,6 @@
     </form>
         </div>
       <br />
-          <div id="container2">
-        <table class="table table-bordered">
-        <thead id="cabecera">
-            <tr>
-                    <th>ID</th>
-                    <th>Empleado</th>
-                    <th>Tipo salida </th>
-                    <th>Motivo</th>
-                    <th>Fecha</th>
-            </tr>
-        </thead>
-        <tbody id="cuerpo">
-            <asp:Repeater ID="RepeaterSal" runat="server">
-                <ItemTemplate>
-                    <tr>
-                        <td> <%#Eval("id") %></td>
-                        <td> <%#Eval("empleado") %></td>
-                        <td> <%#Eval("tiposalida") %></td>
-                        <td> <%#Eval("motivo") %></td>
-                        <td> <%#Eval("fechasalida") %></td>
-                    </tr>
-                </ItemTemplate>
-            </asp:Repeater>
-        </tbody>
-    </table>
-    </div>
+         
 </body>
 </html>

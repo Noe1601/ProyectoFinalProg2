@@ -16,8 +16,7 @@ namespace CapaPresentacion
         datosnegocio nego = new datosnegocio();
         protected void Page_Load(object sender, EventArgs e)
         {
-            RepeaterPer.DataSource = nego.MostrarPermiso();
-            RepeaterPer.DataBind();
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)

@@ -15,8 +15,7 @@ namespace CapaPresentacion
         datosnegocio nego = new datosnegocio();
         protected void Page_Load(object sender, EventArgs e)
         {
-            RepeaterDept.DataSource = nego.MostrarDept();
-            RepeaterDept.DataBind();
+          
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -27,14 +26,26 @@ namespace CapaPresentacion
             nego.Insertar(OBJETO);
             textboxCod.Text = " ";
             textboxNom.Text = " ";
-            //ScriptManager.RegisterStartupScript(this, this.GetType(),
-            //    "alert",
-            //    "alert(Departamento registrado); window.location = 'FormularioDept.aspx';"  , true);
+
         }
 
         protected void BotonAtras_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Modulo1.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            OBJETO.id = int.Parse(textboxID.Text);
+            OBJETO.codigodepartamento = textboxCod.Text;
+            OBJETO.nombre = textboxNom.Text;
+            nego.Editar(OBJETO);
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            OBJETO.id = int.Parse(textboxID.Text);
+            nego.Eliminar(OBJETO);
         }
     }
 }
