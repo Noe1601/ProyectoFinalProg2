@@ -35,6 +35,7 @@
         <asp:Button ID="Button1" class="btn btn-success" runat="server" Text="Registrar empleado" OnClick="Button1_Click" /><br /><br />
          <asp:Button ID="Button3" class="btn btn-warning" runat="server" Text="Actualizar empleado" OnClick="Button3_Click1"  /><br /><br />
          <asp:Button ID="Button4" class="btn btn-primary" runat="server" Text="Eliminar empleado" OnClick="Button4_Click"  /><br /><br />
+         <asp:Button ID="Button2" class="btn btn-success" runat="server" Text="Ver listado de empleados" OnClick="Button2_Click"  />
 
     </form>
         </div>

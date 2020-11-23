@@ -31,7 +31,7 @@ namespace CapaPresentacion
 
         protected void BotonAtras_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Modulo1.aspx");
+            Response.Redirect("~/ReporteDepartamentos.aspx");
         }
 
         protected void Button2_Click(object sender, EventArgs e)

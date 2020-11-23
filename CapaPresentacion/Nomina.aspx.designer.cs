@@ -33,13 +33,13 @@ namespace CapaPresentacion
         protected global::System.Web.UI.WebControls.Label LabelCodigo;
 
         /// <summary>
-        /// Control textboxYear.
+        /// Control DropDownList1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textboxYear;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
 
         /// <summary>
         /// Control LabelNombre.
@@ -51,13 +51,13 @@ namespace CapaPresentacion
         protected global::System.Web.UI.WebControls.Label LabelNombre;
 
         /// <summary>
-        /// Control textboxMonth.
+        /// Control DropDownList2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textboxMonth;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
 
         /// <summary>
         /// Control Button1.

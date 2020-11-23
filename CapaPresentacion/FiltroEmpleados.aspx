@@ -11,6 +11,7 @@
 </head>
 <body>
     <div id="container">
+        <a href="ModuloReportes.aspx">Ir a modulo reportes</a>
         <h1>Consulta de empleados activos</h1>
     <form id="form1" runat="server">
         <asp:Label ID="Label1" runat="server" Text="Nombre"></asp:Label><br />
@@ -19,7 +20,8 @@
         <asp:Label ID="Label2" runat="server" Text="Departamento"></asp:Label><br />
         <asp:TextBox ID="TextBoxDepartamento"  runat="server"></asp:TextBox><br /> <br />
         <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Buscar por departamento" OnClick="Button1_Click" /><br /><br />
-        <asp:GridView ID="GridView1" class="GridView1"  runat="server" Width="511px" ></asp:GridView>
+        <asp:GridView ID="GridView1" class="GridView2"  runat="server" Width="511px" ></asp:GridView>
+        <br />
     </form>
    </div>
 </body>

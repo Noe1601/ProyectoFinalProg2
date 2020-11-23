@@ -107,6 +107,23 @@ namespace CapaDatos
             db.SaveChanges();
         }
 
+        public void EditarVacaciones(vacaciones vaca)
+        {
+            var vacaciones = db.vacaciones.First(v => v.empleado == vaca.empleado);
+            vacaciones.desde = vaca.desde;
+            vacaciones.hasta = vaca.hasta;
+            vacaciones.yearr = vaca.yearr;
+            vacaciones.comentarios = vaca.comentarios;
+            db.SaveChanges();
+        }
+
+        public void EliminarVacaciones(vacaciones vaca)
+        {
+            var vacaciones = db.vacaciones.First(v => v.empleado == vaca.empleado);
+            db.vacaciones.Remove(vacaciones);
+            db.SaveChanges();
+        }
+
         public List<vacaciones> MostrarVacaciones()
         {
             return db.vacaciones.ToList();
@@ -116,6 +133,22 @@ namespace CapaDatos
         public void RegistroPermiso(permisos permiso)
         {
             db.permisos.Add(permiso);
+            db.SaveChanges();
+        }
+
+        public void EditarPermiso(permisos permiso)
+        {
+            var permi = db.permisos.First(p => p.empleado == permiso.empleado);
+            permi.desde = permiso.desde;
+            permi.hasta = permiso.hasta;
+            permi.comentarios = permiso.comentarios;
+            db.SaveChanges();
+        }
+
+        public void EliminarPermiso(permisos permiso)
+        {
+            var permi = db.permisos.First(p => p.empleado == permiso.empleado);
+            db.permisos.Remove(permi);
             db.SaveChanges();
         }
 
@@ -132,6 +165,23 @@ namespace CapaDatos
             db.SaveChanges();
         }
 
+        public void EditarLicencia(licencias licen)
+        {
+            var licencia = db.licencias.First(l => l.empleado == licen.empleado);
+            licencia.desde = licen.desde;
+            licencia.hasta = licen.hasta;
+            licencia.motivos = licen.motivos;
+            licencia.comentarios = licen.comentarios;
+            db.SaveChanges();
+        }
+
+        public void EliminarLicencia(licencias licen)
+        {
+            var licencia = db.licencias.First(l => l.empleado == licen.empleado);
+            db.licencias.Remove(licencia);
+            db.SaveChanges();
+        }
+
         public List<licencias> MostarLicencias()
         {
             return db.licencias.ToList();
@@ -142,6 +192,22 @@ namespace CapaDatos
         public void RegistrarSalida(salidas salida)
         {
             db.salidas.Add(salida);
+            db.SaveChanges();
+        }
+
+        public void EditarSalida(salidas salida)
+        {
+            var salir = db.salidas.First(s => s.empleado == salida.empleado);
+            salir.tiposalida = salida.tiposalida;
+            salir.motivo = salida.motivo;
+            salir.fechasalida = salida.fechasalida;
+            db.SaveChanges();
+        }
+
+        public void EliminarSalida(salidas salida)
+        {
+            var salir = db.salidas.First(s => s.empleado == salida.empleado);
+            db.salidas.Remove(salir);
             db.SaveChanges();
         }
 

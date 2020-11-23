@@ -10,9 +10,10 @@
     <title></title>
 </head>
 <body>
-     <div id="container500">
+     <div id="container">
     <form id="form1" runat="server">
        <div>
+          
             <h1>Registro de vacaciones</h1>
             <asp:Label ID="Label1" runat="server" Text="No.Empleado"></asp:Label><br />
             <asp:TextBox ID="TextBoxEmpleado" runat="server"></asp:TextBox><br />
@@ -24,8 +25,10 @@
             <asp:TextBox ID="TextBoxCorre" runat="server"></asp:TextBox><br />
              <asp:Label ID="Label5" runat="server" Text="Comentarios"></asp:Label><br />
             <asp:TextBox ID="TextBoxComen" runat="server"></asp:TextBox><br /><br />
-            <asp:Button ID="Button1" class="btn btn-success" runat="server" Text="Registrar vacaciones" OnClick="Button1_Click" />
-             <asp:Button ID="Button2" class="btn btn-danger" runat="server" Text="Ir atras" OnClick="Button2_Click" />
+            <asp:Button ID="Button1" class="btn btn-success" runat="server" Text="Registrar vacaciones" OnClick="Button1_Click" /><br /><br />
+           <asp:Button ID="Button3" class="btn btn-warning" runat="server" Text="Editar " OnClick="Button3_Click"  /><br /><br />
+           <asp:Button ID="Button4" class="btn btn-primary" runat="server" Text="Eliminar " OnClick="Button4_Click"  /><br /><br />
+             <asp:Button ID="Button2" class="btn btn-danger" runat="server" Text="Ir atras" OnClick="Button2_Click" /><br /><br />
         </div>
     </form>
          </div>

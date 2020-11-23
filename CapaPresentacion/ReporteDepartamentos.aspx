@@ -11,6 +11,7 @@
 </head>
 <body>
     <div id="contenedor10">
+        <a href="ModuloReportes.aspx">Ir a modulo reportes</a>
           <h1>Departamentos registrados</h1>
     <table class="table table-bordered">
         <thead id="cabecera">
@@ -32,11 +33,8 @@
             </asp:Repeater>
         </tbody>
     </table>
-            <form id="form1" runat="server">
-        <div>
-             <asp:Button ID="Button1" runat="server" class="btn btn-success" Text="Imprimir" />
-        </div>
-    </form>
+        
+        
          
   </div>
 </body>

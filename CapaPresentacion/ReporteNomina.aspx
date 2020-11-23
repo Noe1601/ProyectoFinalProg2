@@ -11,6 +11,7 @@
 </head>
 <body>
     <div id="container">
+        <a href="ModuloReportes.aspx">Ir a modulo reportes</a>
         <h1>Consulta de nomina</h1>
     <form id="form1" runat="server">
         <asp:Label ID="Label1" runat="server" Text="Ingrese el mes aqui"></asp:Label><br />

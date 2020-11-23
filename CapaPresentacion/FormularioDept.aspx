@@ -26,7 +26,7 @@
             <asp:Button ID="Button1" class="btn btn-success" runat="server" Text="Guardar" OnClick="Button1_Click" /><br /><br />
             <asp:Button ID="Button2" class="btn btn-warning" runat="server" Text="Editar" OnClick="Button2_Click" /><br /><br />
             <asp:Button ID="Button3" class="btn btn-primary" runat="server" Text="Eliminar" OnClick="Button3_Click"  /><br /><br/>
-           <%--<asp:Button ID="BotonAtras" class="btn btn-danger" runat="server" Text="Ir atras" OnClick="BotonAtras_Click" /><br />--%>
+           <asp:Button ID="BotonAtras" class="btn btn-success" runat="server" Text="Ver listado de departamentos" OnClick="BotonAtras_Click" /><br />
        </form>
         </div>
    

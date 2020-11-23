@@ -40,5 +40,34 @@ namespace CapaPresentacion
         {
             Response.Redirect("~/ModuloProcesos.aspx");
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            licencia.empleado = TextBoxEmpleado.Text;
+            licencia.desde = Convert.ToDateTime(TextBoxInicio.Text);
+            licencia.hasta = Convert.ToDateTime(TextBoxFinal.Text);
+            licencia.motivos = TextBoxMotivo.Text;
+            licencia.comentarios = TextBoxComen.Text;
+            nego.EditarLicencia(licencia);
+
+            TextBoxEmpleado.Text = "";
+            TextBoxInicio.Text = "";
+            TextBoxFinal.Text = "";
+            TextBoxMotivo.Text = "";
+            TextBoxComen.Text = "";
+
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            licencia.empleado = TextBoxEmpleado.Text;
+            nego.EliminarLicencia(licencia);
+
+            TextBoxEmpleado.Text = "";
+            TextBoxInicio.Text = "";
+            TextBoxFinal.Text = "";
+            TextBoxMotivo.Text = "";
+            TextBoxComen.Text = "";
+        }
     }
 }

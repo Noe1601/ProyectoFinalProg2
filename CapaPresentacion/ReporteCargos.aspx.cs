@@ -16,5 +16,7 @@ namespace CapaPresentacion
             RepeaterCargo.DataSource = nego.MostrarCargo();
             RepeaterCargo.DataBind();
         }
+
+      
     }
 }

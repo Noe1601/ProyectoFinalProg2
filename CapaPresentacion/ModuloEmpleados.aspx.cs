@@ -78,5 +78,10 @@ namespace CapaPresentacion
             TextBoxEstatus.Text = "";
             TextBoxSalario.Text = "";
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/FiltroEmpleados.aspx");
+        }
     }
 }

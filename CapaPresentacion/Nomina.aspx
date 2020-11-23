@@ -13,13 +13,22 @@
 <body>
     <div id="container500">
     <form id="form1" runat="server">
+            <a href="ReporteNomina.aspx">Consultar nominas</a>
          <h1>Registro de nomina</h1>
-            <asp:Label ID="LabelCodigo" runat="server" Text="Ingrese el año correspondiente"></asp:Label><br />
-            <asp:TextBox ID="textboxYear" runat="server"></asp:TextBox><br />
+        <br />
+         <asp:Label ID="LabelCodigo" runat="server" Text="Ingrese el año correspondiente"></asp:Label><br />
+        <asp:DropDownList ID="DropDownList1" class="relleno" runat="server"></asp:DropDownList><br />
+         <%--   <asp:Label ID="LabelCodigo" runat="server" Text="Ingrese el año correspondiente"></asp:Label><br />
+            <asp:TextBox ID="textboxYear" runat="server"></asp:TextBox><br />--%>
             <asp:Label ID="LabelNombre" runat="server" Text="Ingrese el mes correspondiente"></asp:Label><br />
-            <asp:TextBox ID="textboxMonth" runat="server"></asp:TextBox><br /><br />
+        <asp:DropDownList ID="DropDownList2" class="relleno" runat="server"></asp:DropDownList><br /><br />
+           <%-- <asp:TextBox ID="textboxMonth" runat="server"></asp:TextBox><br /><br />--%>
             <asp:Button ID="Button1" class="btn btn-success" runat="server" Text="procesar nomina" OnClick="Button1_Click" /><br />
-           <asp:Button ID="BotonAtras" class="btn btn-danger" runat="server" Text="Ir atras" OnClick="BotonAtras_Click" />
+           <asp:Button ID="BotonAtras" class="btn btn-danger" runat="server" Text="Ir atras" OnClick="BotonAtras_Click" /><br /><br />
+
+
+
+    
     </form>
         </div>
     <br />

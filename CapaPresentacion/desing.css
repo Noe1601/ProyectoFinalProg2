@@ -7,7 +7,6 @@
 }
 
 
-
 /*FUENTES*/
 @font-face {
     font-family: "TrebuchetMS";
@@ -34,6 +33,10 @@
 body {
 }
 
+.relleno{
+    width: 90%;
+}
+
 #container{
     margin-top: 30px;
     border: 1px solid black;
@@ -46,17 +49,18 @@ body {
     color: black;
 }
 
-#containerD {
-    margin-top: 30px;
-    border: 1px solid black;
-    margin-left: 320px;
-    width: 50%;
-    height: 700px;
-    text-align: center;
-    border-radius: 5px;
-    background-color: white;
-    color: black;
-}
+
+    #containerD {
+        margin-top: 30px;
+        border: 1px solid black;
+        margin-left: 320px;
+        width: 50%;
+        height: 700px;
+        text-align: center;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+    }
 
 
 
@@ -99,6 +103,18 @@ body {
     color: black;
 }
 
+#container900 {
+    margin-top: 30px;
+    border: 1px solid black;
+    margin-left: 320px;
+    width: 50%;
+    height: 350px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
 
 
     #contenedor {
@@ -133,6 +149,7 @@ body {
     background-color: white;
     border: 1px solid black;
     border-radius: 3px;
+    text-align: center
 }
 
 #contenedor10 h1 {

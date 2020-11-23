@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -88,6 +89,16 @@ namespace CapaNegocio
             data.RegistrarVacaciones(vaca);
         }
 
+        public void EditVacaciones(vacaciones vaca)
+        {
+            data.EditarVacaciones(vaca);
+        }
+
+        public void ElimVacaciones(vacaciones vaca)
+        {
+            data.EliminarVacaciones(vaca);
+        }
+
         public List<vacaciones> MostrarVacaciones()
         {
             return data.MostrarVacaciones();
@@ -97,6 +108,16 @@ namespace CapaNegocio
         public void Permisos(permisos permiso)
         {
             data.RegistroPermiso(permiso);
+        }
+
+        public void EditPermiso(permisos permiso)
+        {
+            data.EditarPermiso(permiso);
+        }
+
+        public void ElimPermiso(permisos permiso)
+        {
+            data.EliminarPermiso(permiso);
         }
 
         public List<permisos> MostrarPermiso()
@@ -110,6 +131,16 @@ namespace CapaNegocio
             data.RegistrarLicencia(licencia);
         }
 
+        public void EditarLicencia(licencias licencia)
+        {
+            data.EditarLicencia(licencia);
+        }
+
+        public void EliminarLicencia(licencias licencia)
+        {
+            data.EliminarLicencia(licencia);
+        }
+
         public List<licencias> MostrarLicencia()
         {
             return data.MostarLicencias();
@@ -119,6 +150,16 @@ namespace CapaNegocio
         public void Salidas(salidas salida)
         {
             data.RegistrarSalida(salida);
+        }
+
+        public void EditSalidas(salidas salida)
+        {
+            data.EditarSalida(salida);
+        }
+
+        public void ElimSalida(salidas salida)
+        {
+            data.EliminarSalida(salida);
         }
 
         public List<salidas> MostrarSalidas()

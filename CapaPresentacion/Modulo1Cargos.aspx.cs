@@ -42,5 +42,10 @@ namespace CapaPresentacion
             cargos.id = int.Parse(TextBoxID.Text);
             nego.EliminarCargo(cargos);
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ReporteCargos.aspx");
+        }
     }
 }

@@ -10,8 +10,10 @@
     <title></title>
 </head>
 <body>
-    <div>
+    <form id="form1" runat="server">
+ 
         <div>
+             
                      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Modulo procesos</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,12 +39,10 @@
       </li>
   
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+   
   </div>
 </nav>
+            <asp:Button ID="Button1" class="btn btn-danger" runat="server" Text="Ir atras" OnClick="Button1_Click" />
             <div id="cards">
             <div id="card">
                 <p class="icon">H</p>
@@ -75,11 +75,11 @@
     
         </div>
 
-        
+        </form>
    <div class="footer">
         &copy; Noe Eduardo Medina Henriquez WEB
     </div>
-        </div>
+
 
 </body>
 </html>

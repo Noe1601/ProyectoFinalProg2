@@ -49,6 +49,7 @@
 
   </div>
 </nav>
+               <asp:Button ID="Button1" class="btn btn-danger" runat="server" Text="Ir atras" OnClick="Button1_Click" /><br />
             <div id="cards">
             <div id="card">
                 <p class="icon">H</p>

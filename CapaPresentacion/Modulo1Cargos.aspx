@@ -22,6 +22,7 @@
             <asp:Button ID="ButtonCargo" class="btn btn-success" runat="server" Text="Registrar cargo" OnClick="ButtonCargo_Click" /><br /><br />
                <asp:Button ID="Button1" class="btn btn-warning" runat="server" Text="Actualizar cargo" OnClick="Button1_Click"  /><br /><br />
             <asp:Button ID="Button2" class="btn btn-primary" runat="server" Text="Eliminar cargo" OnClick="Button2_Click"  /><br /><br />
+             <asp:Button ID="Button3" class="btn btn-success" runat="server" Text="Ver listado de cargos" OnClick="Button3_Click" />
         </div>
     </form>
         </div>

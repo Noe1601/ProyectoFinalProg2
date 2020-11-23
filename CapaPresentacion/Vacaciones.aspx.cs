@@ -40,5 +40,35 @@ namespace CapaPresentacion
         {
             Response.Redirect("~/ModuloProcesos.aspx");
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            vacacion.empleado = TextBoxEmpleado.Text;
+            vacacion.desde = Convert.ToDateTime(TextBoxInicio.Text);
+            vacacion.hasta = Convert.ToDateTime(TextBoxFinal.Text);
+            vacacion.yearr = Convert.ToDateTime(TextBoxCorre.Text);
+            vacacion.comentarios = TextBoxComen.Text;
+            nego.EditVacaciones(vacacion);
+
+
+            TextBoxEmpleado.Text = "";
+            TextBoxInicio.Text = "";
+            TextBoxFinal.Text = "";
+            TextBoxCorre.Text = "";
+            TextBoxComen.Text = "";
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            vacacion.empleado = TextBoxEmpleado.Text;
+            nego.ElimVacaciones(vacacion);
+
+            TextBoxEmpleado.Text = "";
+            TextBoxInicio.Text = "";
+            TextBoxFinal.Text = "";
+            TextBoxCorre.Text = "";
+            TextBoxComen.Text = "";
+
+        }
     }
 }
