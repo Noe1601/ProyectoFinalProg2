@@ -19,11 +19,41 @@ namespace CapaPresentacion
             adaptador.Fill(dt);
             this.GridView1.DataSource = dt;
             GridView1.DataBind();
+
+            if (!IsPostBack)
+            {
+
+                ListItem month = new ListItem("ENERO", "Enero");
+                ListItem month1 = new ListItem("FEBRERO", "Febrero");
+                ListItem month2 = new ListItem("MARZO", "Marzo");
+                ListItem month3 = new ListItem("ABRIL", "Abril");
+                ListItem month4 = new ListItem("MAYO", "Mayo");
+                ListItem month5 = new ListItem("JUNIO", "Junio");
+                ListItem month6 = new ListItem("JULIO", "Julio");
+                ListItem month7 = new ListItem("AGOSTO", "Agosto");
+                ListItem month8 = new ListItem("SEPTIEMBRE", "Septiembre");
+                ListItem month9 = new ListItem("OCTUBRE", "Octubre");
+                ListItem month10 = new ListItem("NOVIEMBRE", "Noviembre");
+                ListItem month11 = new ListItem("DICIEMBRE", "Diciembre");
+                DropDownList1.Items.Add(month);
+                DropDownList1.Items.Add(month1);
+                DropDownList1.Items.Add(month2);
+                DropDownList1.Items.Add(month3);
+                DropDownList1.Items.Add(month4);
+                DropDownList1.Items.Add(month5);
+                DropDownList1.Items.Add(month6);
+                DropDownList1.Items.Add(month7);
+                DropDownList1.Items.Add(month8);
+                DropDownList1.Items.Add(month9);
+                DropDownList1.Items.Add(month10);
+                DropDownList1.Items.Add(month11);
+            }
+
         }
 
         void BuscarPorMes()
         {
-            SqlDataAdapter ap = new SqlDataAdapter("SET LANGUAGE Spanish; select * from empleados WHERE DATENAME(MONTH,fecha) = '" + TextBoxMes.Text+"'", conexion);
+            SqlDataAdapter ap = new SqlDataAdapter("SET LANGUAGE Spanish; select * from empleados WHERE DATENAME(MONTH,fecha) = '" + DropDownList1.Text+"'", conexion);
             DataTable dt = new DataTable();
             ap.Fill(dt);
             GridView1.DataSource = dt;
@@ -33,7 +63,7 @@ namespace CapaPresentacion
         protected void Button1_Click(object sender, EventArgs e)
         {
             BuscarPorMes();
-            TextBoxMes.Text = "";
+
         }
     }
 }

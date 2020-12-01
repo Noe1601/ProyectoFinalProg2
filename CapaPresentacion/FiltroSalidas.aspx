@@ -15,7 +15,7 @@
         <h1>Consulta de empleados inactivos</h1>
     <form id="form1" runat="server">
         <asp:Label ID="Label1" runat="server" Text="Ingrese un mes aqui"></asp:Label><br />
-        <asp:TextBox ID="TextBoxSalida"  runat="server"></asp:TextBox><br /> <br />
+        <asp:DropDownList ID="DropDownList1" class="relleno" runat="server"></asp:DropDownList><br /><br />
         <asp:Button ID="Button2" class="btn btn-success" runat="server" Text="Buscar" OnClick="Button2_Click"  /><br /><br />
          <asp:GridView ID="GridView1" class="GridView1"  runat="server" Width="511px" ></asp:GridView>
     </form>

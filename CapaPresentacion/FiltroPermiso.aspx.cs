@@ -46,7 +46,7 @@ namespace CapaPresentacion
 
         void BuscarPorNombre()
         {
-            SqlDataAdapter ap = new SqlDataAdapter("SET LANGUAGE Spanish; select * from permisos WHERE empleado = '" + DropDownList1.Text + "'", conexion);
+            SqlDataAdapter ap = new SqlDataAdapter("SET LANGUAGE Spanish; select * from permisos WHERE empleado = '" + DropDownList1.Text + "' and Estatus='Activo'", conexion);
             DataTable dt = new DataTable();
             ap.Fill(dt);
             GridView1.DataSource = dt;

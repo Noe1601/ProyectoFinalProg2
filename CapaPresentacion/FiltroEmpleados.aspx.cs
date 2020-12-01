@@ -34,7 +34,7 @@ namespace CapaPresentacion
         protected void Button2_Click(object sender, EventArgs e)
         {
             BuscarPorNombre();
-            TextBoxNombre.Text = "";
+
         }
 
         void BuscarPorDepartamento()
@@ -49,7 +49,7 @@ namespace CapaPresentacion
         protected void Button1_Click(object sender, EventArgs e)
         {
             BuscarPorDepartamento();
-            TextBoxDepartamento.Text = "";
+
         }
     }
 }
