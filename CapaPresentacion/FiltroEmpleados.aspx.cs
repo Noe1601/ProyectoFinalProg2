@@ -14,7 +14,7 @@ namespace CapaPresentacion
         public SqlConnection conexion = new SqlConnection("Data Source=LAPTOP-QJ659VTB\\SQLEXPRESS01;Initial Catalog=Finalprogramacion2;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework");
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlDataAdapter adaptador = new SqlDataAdapter("SELECT * from empleados", conexion);
+            SqlDataAdapter adaptador = new SqlDataAdapter("SELECT * from empleados where Estatus = 'Activo'", conexion);
             DataTable dt = new DataTable();
             adaptador.Fill(dt);
             this.GridView1.DataSource = dt;
@@ -24,7 +24,7 @@ namespace CapaPresentacion
 
         void BuscarPorNombre()
         {
-            SqlDataAdapter ap = new SqlDataAdapter("SELECT * FROM empleados WHERE nombre = '" + TextBoxNombre.Text + "'", conexion);
+            SqlDataAdapter ap = new SqlDataAdapter("SELECT * FROM empleados WHERE nombre = '" + TextBoxNombre.Text + "' and Estatus = 'Activo'", conexion);
             DataTable dt = new DataTable();
             ap.Fill(dt);
             GridView1.DataSource = dt;
@@ -39,7 +39,7 @@ namespace CapaPresentacion
 
         void BuscarPorDepartamento()
         {
-            SqlDataAdapter ap = new SqlDataAdapter("SELECT * FROM empleados WHERE departamento = '" + int.Parse(TextBoxDepartamento.Text) + "'", conexion);
+            SqlDataAdapter ap = new SqlDataAdapter("SELECT * FROM empleados WHERE departamento = '" + int.Parse(TextBoxDepartamento.Text) + "' and Estatus = 'Activo'", conexion);
             DataTable dt = new DataTable();
             ap.Fill(dt);
             GridView1.DataSource = dt;

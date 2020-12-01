@@ -15,11 +15,12 @@
         <div>
                <h1>Salida de empleados</h1>
             <asp:Label ID="Label1" runat="server" Text="Empleado"></asp:Label><br />
-            <asp:TextBox ID="TextBoxEmpleado" runat="server"></asp:TextBox><br />
+            <asp:DropDownList ID="DropDownList2" class="relleno" runat="server"></asp:DropDownList><br />
+           <%-- <asp:TextBox ID="TextBoxEmpleado" runat="server"></asp:TextBox><br />--%>
              <asp:Label ID="Label2" runat="server" Text="Tipo de salida"></asp:Label><br />
-            <asp:TextBox ID="TextBoxTipo" runat="server"></asp:TextBox><br />
+            <asp:DropDownList ID="DropDownList1" class="relleno" runat="server"></asp:DropDownList><br />
              <asp:Label ID="Label3" runat="server" Text="Motivo"></asp:Label><br />
-            <asp:TextBox ID="TextBoxMotivo" runat="server"></asp:TextBox><br />
+                        <asp:TextBox ID="TextBoxMotivo" runat="server"></asp:TextBox><br />
              <asp:Label ID="Label4" runat="server" Text="Fecha"></asp:Label><br />
             <asp:TextBox ID="TextBoxFecha" runat="server"></asp:TextBox><br /><br />
             <asp:Button ID="Button1" class="btn btn-success" runat="server" Text="Inactivar empleado" OnClick="Button1_Click" /><br /><br />

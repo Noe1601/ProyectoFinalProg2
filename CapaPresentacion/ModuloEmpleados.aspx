@@ -23,13 +23,13 @@
         <asp:Label ID="Label4" runat="server" Text="Telefono"></asp:Label><br />
         <asp:TextBox ID="TextBoxTel" runat="server"></asp:TextBox><br />
         <asp:Label ID="Label5" runat="server" Text="Departamento"></asp:Label><br />
-        <asp:TextBox ID="TextBoxDept" runat="server"></asp:TextBox><br />
+        <asp:DropDownList ID="DropDownList2" class="relleno" runat="server"></asp:DropDownList><br />
         <asp:Label ID="Label6" runat="server" Text="Cargo"></asp:Label><br />
-        <asp:TextBox ID="TextBoxCargo" runat="server"></asp:TextBox><br />
-        <asp:Label ID="Label7" runat="server" Text="Fecha"></asp:Label><br />
+        <asp:DropDownList ID="DropDownList3" class="relleno"  runat="server"></asp:DropDownList><br />
+        <asp:Label ID="Label7"  runat="server" Text="Fecha"></asp:Label><br />
         <asp:TextBox ID="TextBoxFecha" runat="server"></asp:TextBox><br />
         <asp:Label ID="Label8" runat="server" Text="Estatus"></asp:Label><br />
-        <asp:TextBox ID="TextBoxEstatus" runat="server"></asp:TextBox><br />
+        <asp:DropDownList ID="DropDownList1" class="relleno" runat="server"></asp:DropDownList><br />
         <asp:Label ID="Label9" runat="server" Text="Salario"></asp:Label><br />
         <asp:TextBox ID="TextBoxSalario" runat="server"></asp:TextBox><br /><br />
         <asp:Button ID="Button1" class="btn btn-success" runat="server" Text="Registrar empleado" OnClick="Button1_Click" /><br /><br />

@@ -13,16 +13,20 @@
     margin-bottom: 20px;
 }
 
+.relleno {
+    width: 90%;
+}
+
 
 #container .GridView1{
     margin-top: 20px;
-    margin-left: 150px;
+    margin-left: 80px;
     margin-bottom: 20px;
 }
 
     #container .GridView2 {
         margin-top: 20px;
-        margin-left: 100px;
+        margin-left: 80px;
         margin-bottom: 20px;
     }
 

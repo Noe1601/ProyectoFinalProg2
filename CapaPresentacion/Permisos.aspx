@@ -16,7 +16,8 @@
             <a href="FiltroPermiso.aspx">Ir a listado de permisos</a>
             <h1>Registro de permisos</h1>
             <asp:Label ID="Label1" runat="server" Text="No.Empleado"></asp:Label><br />
-            <asp:TextBox ID="TextBoxEmpleado" runat="server"></asp:TextBox><br />
+            <asp:DropDownList ID="DropDownList1" class="relleno" runat="server"></asp:DropDownList><br />
+            <%--<asp:TextBox ID="TextBoxEmpleado" runat="server"></asp:TextBox><br />--%>
              <asp:Label ID="Label2" runat="server" Text="Inicio(Fecha)"></asp:Label><br />
             <asp:TextBox ID="TextBoxInicio" runat="server"></asp:TextBox><br />
              <asp:Label ID="Label3" runat="server" Text="Final(Fecha)"></asp:Label><br />

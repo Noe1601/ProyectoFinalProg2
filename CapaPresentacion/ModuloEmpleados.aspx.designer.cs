@@ -105,13 +105,13 @@ namespace CapaPresentacion
         protected global::System.Web.UI.WebControls.Label Label5;
 
         /// <summary>
-        /// Control TextBoxDept.
+        /// Control DropDownList2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxDept;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
 
         /// <summary>
         /// Control Label6.
@@ -123,13 +123,13 @@ namespace CapaPresentacion
         protected global::System.Web.UI.WebControls.Label Label6;
 
         /// <summary>
-        /// Control TextBoxCargo.
+        /// Control DropDownList3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxCargo;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
 
         /// <summary>
         /// Control Label7.
@@ -159,13 +159,13 @@ namespace CapaPresentacion
         protected global::System.Web.UI.WebControls.Label Label8;
 
         /// <summary>
-        /// Control TextBoxEstatus.
+        /// Control DropDownList1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxEstatus;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
 
         /// <summary>
         /// Control Label9.

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace CapaPresentacion
 {
@@ -16,12 +18,32 @@ namespace CapaPresentacion
         datosnegocio nego = new datosnegocio();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                CargarNombre();
+            }
+        }
 
+        public void CargarNombre()
+        {
+            using (SqlConnection conexion = new SqlConnection("Data Source=LAPTOP-QJ659VTB\\SQLEXPRESS01;Initial Catalog=Finalprogramacion2;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework"))
+            {
+                SqlCommand comando = new SqlCommand();
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.CommandText = "CARGAREMPLEADOS";
+                comando.Connection = conexion;
+                conexion.Open();
+                DropDownList1.DataSource = comando.ExecuteReader();
+                DropDownList1.DataTextField = "nombre";
+                DropDownList1.DataValueField = "nombre";
+                DropDownList1.DataBind();
+                DropDownList1.Items.Insert(0, new ListItem("--Seleccionar--", "0"));
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            vacacion.empleado = TextBoxEmpleado.Text;
+            vacacion.empleado = DropDownList1.Text;
             vacacion.desde = Convert.ToDateTime(TextBoxInicio.Text);
             vacacion.hasta = Convert.ToDateTime(TextBoxFinal.Text);
             vacacion.yearr = Convert.ToDateTime(TextBoxCorre.Text);
@@ -29,7 +51,6 @@ namespace CapaPresentacion
 
             nego.Vacaciones(vacacion);
 
-            TextBoxEmpleado.Text = "";
             TextBoxInicio.Text = "";
             TextBoxFinal.Text = "";
             TextBoxCorre.Text = "";
@@ -43,7 +64,7 @@ namespace CapaPresentacion
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            vacacion.empleado = TextBoxEmpleado.Text;
+            vacacion.empleado = DropDownList1.Text;
             vacacion.desde = Convert.ToDateTime(TextBoxInicio.Text);
             vacacion.hasta = Convert.ToDateTime(TextBoxFinal.Text);
             vacacion.yearr = Convert.ToDateTime(TextBoxCorre.Text);
@@ -51,7 +72,6 @@ namespace CapaPresentacion
             nego.EditVacaciones(vacacion);
 
 
-            TextBoxEmpleado.Text = "";
             TextBoxInicio.Text = "";
             TextBoxFinal.Text = "";
             TextBoxCorre.Text = "";
@@ -60,10 +80,9 @@ namespace CapaPresentacion
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            vacacion.empleado = TextBoxEmpleado.Text;
+            vacacion.empleado = DropDownList1.Text;
             nego.ElimVacaciones(vacacion);
 
-            TextBoxEmpleado.Text = "";
             TextBoxInicio.Text = "";
             TextBoxFinal.Text = "";
             TextBoxCorre.Text = "";
